@@ -5,11 +5,12 @@ btsstat_56 = {}
 btsstat_57 = {}
 btsstat_58 = {}
 csvfile = pd.read_csv('btsstat58csv.csv')
+
+# Create Dictionary to store data from BTS Stat 2555
 for i in csvfile['Mo Chit'][0:12]:
     btsstat_55.setdefault('Mo Chit', [])
     btsstat_55['Mo Chit'].append(i)
 
-# Create Dictionary to store data from BTS Stat 2555
 for i in csvfile['Saphan Khwai'][0:12]:
     btsstat_55.setdefault('Saphan Khwai', [])
     btsstat_55['Saphan Khwai'].append(i)
@@ -143,6 +144,10 @@ for i in csvfile['National Stadium'][0:12]:
     btsstat_55['National Stadium'].append(i)
 
 # Create Dictionary to store data from BTS Stat 2556
+for i in csvfile['Mo Chit'][12:24]:
+    btsstat_56.setdefault('Mo Chit', [])
+    btsstat_56['Mo Chit'].append(i)
+
 for i in csvfile['Saphan Khwai'][12:24]:
     btsstat_56.setdefault('Saphan Khwai', [])
     btsstat_56['Saphan Khwai'].append(i)
@@ -276,6 +281,10 @@ for i in csvfile['National Stadium'][12:24]:
     btsstat_56['National Stadium'].append(i)
 
 # Create Dictionary to store data from BTS Stat 2557
+for i in csvfile['Mo Chit'][24:36]:
+    btsstat_57.setdefault('Mo Chit', [])
+    btsstat_57['Mo Chit'].append(i)
+
 for i in csvfile['Saphan Khwai'][24:36]:
     btsstat_57.setdefault('Saphan Khwai', [])
     btsstat_57['Saphan Khwai'].append(i)
@@ -409,6 +418,10 @@ for i in csvfile['National Stadium'][24:36]:
     btsstat_57['National Stadium'].append(i)
 
 # Create Dictionary to store data from BTS Stat 2558
+for i in csvfile['Mo Chit'][36:48]:
+    btsstat_58.setdefault('Mo Chit', [])
+    btsstat_58['Mo Chit'].append(i)
+
 for i in csvfile['Saphan Khwai'][36:48]:
     btsstat_58.setdefault('Saphan Khwai', [])
     btsstat_58['Saphan Khwai'].append(i)
@@ -555,4 +568,3 @@ print()
 print("2558")
 for i in btsstat_58:
     print(i, btsstat_58[i])
-
