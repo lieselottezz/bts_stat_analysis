@@ -2,7 +2,7 @@
 import pandas as pd
 def mainfunction():
     """Main function of Import file & create dictionary part"""
-    csvfile = pd.read_csv('btsstat58csv.csv')
+    csvfile = pd.read_csv('bts_all_stat.csv')
     stat_55(csvfile, {})
     stat_56(csvfile, {})
     stat_57(csvfile, {})
