@@ -224,7 +224,7 @@ def chit_lom(dict_stat_54, dict_stat_55, dict_stat_56, dict_stat_57, dict_stat_5
     line_chart.add('BTS Chit Lom', all_chit_lom)
     line_chart.render_to_file('linechart_chit_lom.svg')
 
-def ploen_chit(dict_stat_54, dict_stat_55, dict_stat_56, dict_stat_57, dict_stat_58, date_list):
+def phloen_chit(dict_stat_54, dict_stat_55, dict_stat_56, dict_stat_57, dict_stat_58, date_list):
     """Create Phloen Chit station statistics graph"""
     all_ploen_chit = []
     for i in dict_stat_54['Phloen Chit']:
