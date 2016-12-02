@@ -1,0 +1,42 @@
+"""Main part of circle graph"""
+import pandas as pd
+import pygal
+def circle_graph():
+    """Create a BTS statistics circle graph"""
+    csvfile = pd.read_csv('bts_all_stat.csv')
+    pie_chart = pygal.Pie()
+    pie_chart.title = 'BTS statistics'
+    pie_chart.add('Mo Chit', csvfile['Mo Chit'][60])
+    pie_chart.add('Saphan Khwai', csvfile['Saphan Khwai'][60])
+    pie_chart.add('Ari', csvfile['Ari'][60])
+    pie_chart.add('Sanam Pao', csvfile['Sanam Pao'][60])
+    pie_chart.add('Victory Monument', csvfile['Victory Monument'][60])
+    pie_chart.add('Phaya Thai', csvfile['Phaya Thai'][60])
+    pie_chart.add('Ratchathewi', csvfile['Ratchathewi'][60])
+    pie_chart.add('Siam', csvfile['Siam'][60])
+    pie_chart.add('Chit Lom', csvfile['Chit Lom'][60])
+    pie_chart.add('Phloen Chit', csvfile['Phloen Chit'][60])
+    pie_chart.add('Nana', csvfile['Nana'][60])
+    pie_chart.add('Asok', csvfile['Asok'][60])
+    pie_chart.add('Ekkamai', csvfile['Ekkamai'][60])
+    pie_chart.add('Phra Khanong', csvfile['Phra Khanong'][60])
+    pie_chart.add('On Nut', csvfile['On Nut'][60])
+    pie_chart.add('Bang Chak', csvfile['Bang Chak'][60])
+    pie_chart.add('Punnawithi', csvfile['Punnawithi'][60])
+    pie_chart.add('Udom Suk', csvfile['Udom Suk'][60])
+    pie_chart.add('Bang Na', csvfile['Bang Na'][60])
+    pie_chart.add('Bearing', csvfile['Bearing'][60])
+    pie_chart.add('Ratchadamri', csvfile['Ratchadamri'][60])
+    pie_chart.add('Sala Daeng', csvfile['Sala Daeng'][60])
+    pie_chart.add('Chong Nonsi', csvfile['Chong Nonsi'][60])
+    pie_chart.add('Saphan Taksin', csvfile['Saphan Taksin'][60])
+    pie_chart.add('Krung Thon Buri', csvfile['Krung Thon Buri'][60])
+    pie_chart.add('Wongwian Yai', csvfile['Wongwian Yai'][60])
+    pie_chart.add('Pho Nimit', csvfile['Pho Nimit'][60])
+    pie_chart.add('Talat Phlu', csvfile['Talat Phlu'][60])
+    pie_chart.add('Wutthakat', csvfile['Wutthakat'][60])
+    pie_chart.add('Bang Wa', csvfile['Bang Wa'][60])
+    pie_chart.add('National Stadium', csvfile['National Stadium'][60])
+    pie_chart.render_to_file('circle_graph.svg')
+
+circle_graph()
