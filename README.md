@@ -10,13 +10,11 @@ How to use
 
   - open cmd and run command this 
   
-   1) py -m pip install -U pip setuptools
+   2.1) py -m pip install -U pip setuptools
    
-   2) py -m pip install matplotlib
+   2.2) py -m pip install pandas
    
-   3) py -m pip install pandas
-   
-   4) py -m pip install pygal
+   2.3) py -m pip install pygal
    
 3) Download all file of bts_stat_analysis
 
